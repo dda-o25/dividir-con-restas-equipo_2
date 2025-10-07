@@ -22,6 +22,8 @@ divisor = int(input("Introduzca el divisor: "))
 # Proceso
 if dividendo == divisor:
     cociente = 1
+elif divisor>dividendo:
+    residuo = dividendo
 else:
     while dividendo>=divisor:
         dividendo = dividendo-divisor
