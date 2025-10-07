@@ -16,13 +16,16 @@ cociente = 0
 residuo = 0
 
 # Entradas
-dividendo = float(input("Introduzca el dividendo: "))
-divisor = float(input("Introduzca el divisor: "))
+dividendo = int(input("Introduzca el dividendo: "))
+divisor = int(input("Introduzca el divisor: "))
 
 # Proceso
-while dividendo>=divisor:
-    dividendo = dividendo-divisor
-    residuo = dividendo
-    cociente = cociente +1
+if dividendo == divisor:
+    cociente = 1
+else:
+    while dividendo>=divisor:
+        dividendo = dividendo-divisor
+        residuo = dividendo
+        cociente = cociente +1
 # Salidas
 print(f"El cociente es {cociente}\nEl residuo es {residuo}")
